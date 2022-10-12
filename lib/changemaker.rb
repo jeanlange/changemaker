@@ -38,6 +38,13 @@ class ChangeMaker
         answer = ""
         # construct answer based on counters
         counters.each do |coin|
+            # if there's already something in answer
+            # and I'm about to add something else
+            # then add a ', '
+            if answer != "" && coin[:count] > 0
+                answer << ", "
+            end
+
             if coin[:count] > 1
                 answer << "#{coin[:count]} #{coin[:name]}"
             elsif coin[:count] == 1

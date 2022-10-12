@@ -58,4 +58,11 @@ describe "my cool cash register" do
             expect(change).to eql("2 dimes")
         end
     end
+
+    context "more than one type of coin" do
+        it "can deal with 12 cents (some of 2 denominations, none of one in the middle, both plural and singular)" do
+            change = my_register.make_change(0.12)
+            expect(change).to eql("1 dime, 2 pennies")
+        end
+    end
 end
