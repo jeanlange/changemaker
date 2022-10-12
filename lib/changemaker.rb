@@ -8,6 +8,48 @@ class ChangeMaker
         # set up a set of counters that covers each coin
         counters = [
             {
+                name: "hundos",
+                value: BigDecimal("100.0"), 
+                singular: "hunda",
+                count: 0
+            },    
+            {
+                name: "fiddies",
+                value: BigDecimal("50.0"), 
+                singular: "fiddy",
+                count: 0
+            },
+            {
+                name: "twenties",
+                value: BigDecimal("20.0"), 
+                singular: "twenty",
+                count: 0
+            },
+            {
+                name: "tens",
+                value: BigDecimal("10.0"), 
+                singular: "ten",
+                count: 0
+            },    
+            {
+                name: "fives",
+                value: BigDecimal("5.0"), 
+                singular: "five",
+                count: 0
+            },
+            {
+                name: "dollars",
+                value: BigDecimal("1.0"), 
+                singular: "dollar",
+                count: 0
+            },
+            {
+                name: "quarters",
+                value: BigDecimal("0.25"), 
+                singular: "quarter",
+                count: 0
+            },
+            {
                 name: "dimes",
                 value: BigDecimal("0.10"), 
                 singular: "dime",

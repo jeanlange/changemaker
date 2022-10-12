@@ -65,4 +65,9 @@ describe "my cool cash register" do
             expect(change).to eql("1 dime, 2 pennies")
         end
     end
+
+    it "can deal with all my denominations!" do
+        change = my_register.make_change(185.77)
+        expect(change).to eql("1 hunda, 1 fiddy, 1 twenty, 1 ten, 1 five, 3 quarters, 2 pennies")
+    end
 end
